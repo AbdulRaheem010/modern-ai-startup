@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="NovaAI helps teams build, deploy, and scale intelligent products faster."
+    />
+    <title>NovaAI | Modern AI Startup</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- Sticky navigation -->
+    <header class="site-header" id="top">
+      <nav class="nav container">
+        <a href="#top" class="brand">NovaAI</a>
+        <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">☰</button>
+        <ul class="nav-links" id="nav-links">
+          <li><a href="#features">Features</a></li>
+          <li><a href="#testimonials">Testimonials</a></li>
+          <li><a href="#pricing">Pricing</a></li>
+          <li><a href="#faq">FAQ</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+        <button class="theme-toggle" id="theme-toggle" aria-label="Toggle dark mode">🌙</button>
+      </nav>
+    </header>
+
+    <main>
+      <!-- Hero section with animated gradient -->
+      <section class="hero section">
+        <div class="hero-gradient" aria-hidden="true"></div>
+        <div class="container hero-content reveal">
+          <p class="eyebrow">AI Platform for Ambitious Teams</p>
+          <h1>Launch AI products in weeks, not months.</h1>
+          <p>
+            NovaAI gives your team production-grade models, workflow automation, and observability in one
+            secure platform.
+          </p>
+          <div class="cta-group">
+            <a href="#pricing" class="btn btn-primary">Start Free</a>
+            <a href="#features" class="btn btn-secondary">See Features</a>
+          </div>
+        </div>
+      </section>
+
+      <!-- Features cards -->
+      <section id="features" class="section container">
+        <div class="section-heading reveal">
+          <h2>Everything you need to build modern AI products</h2>
+        </div>
+        <div class="grid features-grid">
+          <article class="card reveal">
+            <h3>Model Orchestration</h3>
+            <p>Connect multiple models, route by quality and cost, and ship reliable intelligence.</p>
+          </article>
+          <article class="card reveal">
+            <h3>Realtime Analytics</h3>
+            <p>Track latency, output quality, and business KPIs with live dashboards.</p>
+          </article>
+          <article class="card reveal">
+            <h3>Enterprise Security</h3>
+            <p>Role-based access, private deployments, and audit-ready logs by default.</p>
+          </article>
+        </div>
+      </section>
+
+      <!-- Testimonials slider -->
+      <section id="testimonials" class="section container">
+        <div class="section-heading reveal">
+          <h2>Trusted by teams shipping AI at scale</h2>
+        </div>
+        <div class="testimonial-slider card reveal" aria-live="polite">
+          <blockquote class="testimonial active">
+            “NovaAI helped us cut model deployment time by 70% in one quarter.”
+            <cite>— Maya Chen, CTO at QuantumCart</cite>
+          </blockquote>
+          <blockquote class="testimonial">
+            “The observability stack is incredible. We fix issues before users notice them.”
+            <cite>— Daniel Price, Head of ML at FinScope</cite>
+          </blockquote>
+          <blockquote class="testimonial">
+            “We launched two AI copilots in six weeks with a tiny team.”
+            <cite>— Aria Lopez, Product Lead at CareGrid</cite>
+          </blockquote>
+          <div class="slider-controls">
+            <button id="prev-testimonial" aria-label="Previous testimonial">←</button>
+            <button id="next-testimonial" aria-label="Next testimonial">→</button>
+          </div>
+        </div>
+      </section>
+
+      <!-- Pricing -->
+      <section id="pricing" class="section container">
+        <div class="section-heading reveal">
+          <h2>Simple pricing for every stage</h2>
+        </div>
+        <div class="grid pricing-grid">
+          <article class="card reveal">
+            <h3>Starter</h3>
+            <p class="price">$29<span>/mo</span></p>
+            <ul>
+              <li>Up to 3 projects</li>
+              <li>Basic analytics</li>
+              <li>Email support</li>
+            </ul>
+          </article>
+          <article class="card featured reveal">
+            <h3>Growth</h3>
+            <p class="price">$99<span>/mo</span></p>
+            <ul>
+              <li>Unlimited projects</li>
+              <li>Advanced routing</li>
+              <li>Priority support</li>
+            </ul>
+          </article>
+          <article class="card reveal">
+            <h3>Enterprise</h3>
+            <p class="price">Custom</p>
+            <ul>
+              <li>Private cloud</li>
+              <li>SSO + compliance suite</li>
+              <li>Dedicated success manager</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <!-- FAQ accordion -->
+      <section id="faq" class="section container">
+        <div class="section-heading reveal">
+          <h2>Frequently asked questions</h2>
+        </div>
+        <div class="faq-list">
+          <details class="card reveal">
+            <summary>Can I integrate my existing models?</summary>
+            <p>Yes. NovaAI supports open-source and proprietary model providers with unified APIs.</p>
+          </details>
+          <details class="card reveal">
+            <summary>Do you offer a free trial?</summary>
+            <p>Absolutely. You can start with a 14-day trial and upgrade when ready.</p>
+          </details>
+          <details class="card reveal">
+            <summary>Is enterprise deployment available?</summary>
+            <p>Yes, we provide private cloud and on-prem options for regulated industries.</p>
+          </details>
+        </div>
+      </section>
+
+      <!-- Contact form with validation -->
+      <section id="contact" class="section container">
+        <div class="section-heading reveal">
+          <h2>Let’s build your AI roadmap</h2>
+        </div>
+        <form id="contact-form" class="card contact-form reveal" novalidate>
+          <label>
+            Name
+            <input type="text" name="name" required minlength="2" />
+          </label>
+          <label>
+            Email
+            <input type="email" name="email" required />
+          </label>
+          <label>
+            Message
+            <textarea name="message" rows="5" required minlength="10"></textarea>
+          </label>
+          <button type="submit" class="btn btn-primary">Send Message</button>
+          <p id="form-message" role="status"></p>
+        </form>
+      </section>
+    </main>
+
+    <footer class="section container footer">
+      <p>© <span id="year"></span> NovaAI. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js" defer></script>
+  </body>
+</html>
